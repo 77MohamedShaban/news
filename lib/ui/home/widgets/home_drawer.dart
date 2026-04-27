@@ -11,14 +11,11 @@ import 'package:provider/provider.dart';
 import '../../../core/resources/assets_manager.dart';
 import '../../../providers/theme_provider.dart';
 
-class HomeDrawer extends StatefulWidget {
-  const HomeDrawer({super.key});
+class HomeDrawer extends StatelessWidget {
+  void Function() backHome;
 
-  @override
-  State<HomeDrawer> createState() => _HomeDrawerState();
-}
+  HomeDrawer({super.key,required this.backHome});
 
-class _HomeDrawerState extends State<HomeDrawer> {
   @override
   Widget build(BuildContext context) {
     var themeProvider = Provider.of<ThemeProvider>(context);
@@ -46,32 +43,37 @@ class _HomeDrawerState extends State<HomeDrawer> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ),
+          InkWell(
+            onTap: () {
+              backHome();
+            },
+            child: Padding(
+              padding:  REdgeInsets.all(16),
+              child: Row(
+                children: [
+                  SvgPicture.asset(
+                    AssetsManager.home,
+                    height: 24.h,
+                    width: 24.w,
+                    colorFilter: ColorFilter.mode(
+                      Theme.of(context).colorScheme.primary,
+                      BlendMode.srcIn,
+                    ),
+                  ),
+                  SizedBox(width: 8.w),
+                  Text(
+                    StringsManager.goToHome,
+                    style: Theme.of(context).textTheme.labelMedium,
+                  ),
+                ],
+              ),
+            ),
+          ),
           Padding(
-            padding: REdgeInsets.all(16),
+            padding: REdgeInsets.only(right:16 ,left: 16,bottom: 16),
             child: Column(
               spacing: 24.h,
               children: [
-                InkWell(
-                  onTap: () {},
-                  child: Row(
-                    children: [
-                      SvgPicture.asset(
-                        AssetsManager.home,
-                        height: 24.h,
-                        width: 24.w,
-                        colorFilter: ColorFilter.mode(
-                          Theme.of(context).colorScheme.primary,
-                          BlendMode.srcIn,
-                        ),
-                      ),
-                      SizedBox(width: 8.w),
-                      Text(
-                        StringsManager.goToHome,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                    ],
-                  ),
-                ),
                 Divider(),
                 ThemeOrLanguageItem(
                   onChanged: (value) {

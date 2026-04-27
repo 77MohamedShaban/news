@@ -13,4 +13,16 @@ abstract final class StringsManager {
   static String get light => "light".tr();
   static String get dark => "dark".tr();
   static String get language => "language".tr();
+  
+  static String get general => "general".tr();
+  static String get business => "business".tr();
+  static String get sports => "sports".tr();
+  static String get technology => "technology".tr();
+  static String get health => "health".tr();
+  static String get science => "science".tr();
+  static String get entertainment => "entertainment".tr();
+  static String get by => "by".tr();
+  static String get noArticlesFound => "noArticlesFound".tr();
+  static String get noInternetConnection => "noInternetConnection".tr();
+
 }

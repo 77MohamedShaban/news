@@ -7,6 +7,7 @@ class AppTheme {
   static ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: ColorsManager.lightPrimaryColor,
     appBarTheme: AppBarTheme(
+      scrolledUnderElevation: 0,
       iconTheme: IconThemeData(color: ColorsManager.lightSecondaryColor),
       backgroundColor: Colors.transparent,
       centerTitle: true,
@@ -45,11 +46,17 @@ class AppTheme {
         color: ColorsManager.greyColor,
         fontWeight: FontWeight.w500,
       ),
+      bodyMedium: TextStyle(
+        fontSize: 24.sp,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.lightSecondaryColor,
+      ),
     ),
   );
   static ThemeData darkTheme = ThemeData(
     scaffoldBackgroundColor: ColorsManager.darkPrimaryColor,
     appBarTheme: AppBarTheme(
+      scrolledUnderElevation: 0,
       iconTheme: IconThemeData(color: ColorsManager.darkSecondaryColor),
       backgroundColor: Colors.transparent,
       centerTitle: true,
@@ -87,6 +94,11 @@ class AppTheme {
         fontSize: 12.sp,
         color: ColorsManager.greyColor,
         fontWeight: FontWeight.w500,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: 24.sp,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.darkSecondaryColor,
       ),
     ),
   );
