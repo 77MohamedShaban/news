@@ -13,8 +13,9 @@ class ThemeOrLanguageItem extends StatelessWidget {
     super.key,
     required this.onChanged,
     required this.selectedValue,
-    required this.items,required this.title,
-    required this.iconPath
+    required this.items,
+    required this.title,
+    required this.iconPath,
   });
 
   @override
@@ -49,7 +50,8 @@ class ThemeOrLanguageItem extends StatelessWidget {
             child: DropdownButton<String>(
               isExpanded: true,
               value: selectedValue,
-              dropdownColor: Theme.of(context).colorScheme.secondary,
+              dropdownColor:
+              Theme.of(context).colorScheme.secondary,
               borderRadius: BorderRadius.circular(16.r),
               elevation: 24,
               icon: Icon(

@@ -7,5 +7,16 @@
   "theme": "الوضع",
   "light": "فاتح",
   "dark": "داكن",
-  "language": "اللغة"
+  "language": "اللغة",
+  "general": "عام",
+  "business": "أعمال",
+  "sports": "رياضة",
+  "technology": "تكنولوجيا",
+  "health": "صحة",
+  "science": "علوم",
+  "entertainment": "ترفيه",
+  "by": "بواسطة",
+  "noArticlesFound": "لا توجد مقالات",
+  "noInternetConnection": "لا يوجد اتصال انترنت"
+
 }
