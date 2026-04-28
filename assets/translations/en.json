@@ -1,0 +1,23 @@
+{
+  "appTitle": "News App",
+  "goToHome": "Go To Home",
+  "welcome": "Good Morning\nHere is Some News For You",
+  "home": "Home",
+  "viewAll": "View All",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "language": "Language",
+  "general": "General",
+  "business": "Business",
+  "sports": "Sports",
+  "technology": "Technology",
+  "health": "Health",
+  "science": "Science",
+  "entertainment": "Entertainment",
+  "by": "By",
+  "noArticlesFound": "No Articles Found",
+  "noInternetConnection": "No Internet Connection",
+  "viewFullArticle": "View Full Article",
+  "startSearching":"Start searching for news"
+}

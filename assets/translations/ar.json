@@ -1,0 +1,23 @@
+{
+  "appTitle": "تطبيق الأخبار",
+  "goToHome": "الذهاب إلى الرئيسية",
+  "welcome": "صباح الخير\nإليك بعض الأخبار",
+  "home": "الرئيسية",
+  "viewAll": "عرض الكل",
+  "theme": "الوضع",
+  "light": "فاتح",
+  "dark": "داكن",
+  "language": "اللغة",
+  "general": "عام",
+  "business": "أعمال",
+  "sports": "رياضة",
+  "technology": "تكنولوجيا",
+  "health": "صحة",
+  "science": "علوم",
+  "entertainment": "ترفيه",
+  "by": "بواسطة",
+  "noArticlesFound": "لا توجد مقالات",
+  "noInternetConnection": "لا يوجد اتصال انترنت",
+  "viewFullArticle": "عرض المقال بالكامل",
+  "startSearching": "ابدأ البحث عن الأخبار"
+}
