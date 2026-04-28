@@ -24,5 +24,6 @@ abstract final class StringsManager {
   static String get by => "by".tr();
   static String get noArticlesFound => "noArticlesFound".tr();
   static String get noInternetConnection => "noInternetConnection".tr();
-
+  static String get viewFullArticle => "viewFullArticle".tr();
+  static String get startSearching => "startSearching".tr();
 }

@@ -17,5 +17,7 @@
   "entertainment": "Entertainment",
   "by": "By",
   "noArticlesFound": "No Articles Found",
-  "noInternetConnection": "No Internet Connection"
+  "noInternetConnection": "No Internet Connection",
+  "viewFullArticle": "View Full Article",
+  "startSearching":"Start searching for news"
 }
