@@ -33,15 +33,15 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: REdgeInsets.only(right: 16, left: 16, top: 16),
-          child: ChangeNotifierProvider(
-            create: (context) => SearchViewModel(),
-            child: Consumer<SearchViewModel>(
-              builder: (context, searchViewModel, child) {
-                return Column(
+    return Scaffold(
+      body: Padding(
+        padding: REdgeInsets.only(right: 16, left: 16, top: 16),
+        child: ChangeNotifierProvider(
+          create: (context) => SearchViewModel(),
+          child: Consumer<SearchViewModel>(
+            builder: (context, searchViewModel, child) {
+              return SafeArea(
+                child: Column(
                   children: [
                     SearchTextField(
                       controller: searchController,
@@ -56,9 +56,9 @@ class _SearchScreenState extends State<SearchScreen> {
                     SizedBox(height: 16.h),
                     Expanded(child: _buildBody(searchViewModel, context)),
                   ],
-                );
-              },
-            ),
+                ),
+              );
+            },
           ),
         ),
       ),

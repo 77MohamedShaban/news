@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../core/resources/assets_manager.dart';
+import '../../../core/resources/strings_Manager.dart';
 
 class SearchTextField extends StatefulWidget {
   final TextEditingController controller;
@@ -55,7 +56,7 @@ class _SearchTextFieldState extends State<SearchTextField> {
           maxHeight: 24.sh,
           maxWidth: 24.sh,
         ),
-        hintText: "Search",
+        hintText: StringsManager.search,
         hintStyle: Theme.of(
           context,
         ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w500),

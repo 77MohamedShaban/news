@@ -19,5 +19,7 @@
   "noArticlesFound": "لا توجد مقالات",
   "noInternetConnection": "لا يوجد اتصال انترنت",
   "viewFullArticle": "عرض المقال بالكامل",
-  "startSearching": "ابدأ البحث عن الأخبار"
+  "startSearching": "ابدأ البحث عن الأخبار",
+  "search": "ابحث"
+
 }
