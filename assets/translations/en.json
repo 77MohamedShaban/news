@@ -19,5 +19,6 @@
   "noArticlesFound": "No Articles Found",
   "noInternetConnection": "No Internet Connection",
   "viewFullArticle": "View Full Article",
-  "startSearching":"Start searching for news"
+  "startSearching":"Start searching for news",
+  "search": "Search"
 }
