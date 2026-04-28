@@ -15,6 +15,12 @@ A modern, responsive, and multi-lingual News Application built with Flutter. Thi
   <img src="https://github.com/user-attachments/assets/233072b3-8592-44d0-a400-cde358676ff6" height="350"/>
 </p>
 
+## 🏗️ Architecture
+​
+ - **MVVM (Model-View-ViewModel)**: The project follows the MVVM architectural pattern to ensure a clean separation of concerns, making the code more maintainable, testable, and scalable.
+   - **Model**: Represents the data structures and business logic.
+   - **View**: The UI layer built with Flutter widgets.
+   - **ViewModel**: Acts as a bridge between the Model and the View, handling the UI logic and state management using **Provider**.
 ---
 ## 🚀 Features
 
