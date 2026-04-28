@@ -6,6 +6,7 @@ A modern, responsive, and multi-lingual News Application built with Flutter. Thi
 
 - **Multi-Category News**: Browse news from different sectors like Sports, Technology, Business, Health, Science, and Entertainment.
 - **Source Filtering**: Filter news based on your favorite sources within each category.
+- **Custom Pagination**: Optimized data loading for large lists of articles to ensure smooth scrolling and better performance.
 - **In-App Search**: Powerful search functionality to find specific articles, enhanced with interactive Lottie animations.
 - **Dark & Light Modes**: Full support for system and manual theme switching for a comfortable reading experience.
 - **Localization**: Supports both **English** and **Arabic** languages with RTL support.
@@ -64,7 +65,7 @@ lib/
    flutter run
    ```
 
-## 📸 Screenshots
+## 📸 Screenshots [ dark mode ]
 
 *(Add your screenshots here later)*
 
