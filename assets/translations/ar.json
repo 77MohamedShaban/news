@@ -17,6 +17,7 @@
   "entertainment": "ترفيه",
   "by": "بواسطة",
   "noArticlesFound": "لا توجد مقالات",
-  "noInternetConnection": "لا يوجد اتصال انترنت"
-
+  "noInternetConnection": "لا يوجد اتصال انترنت",
+  "viewFullArticle": "عرض المقال بالكامل",
+  "startSearching": "ابدأ البحث عن الأخبار"
 }

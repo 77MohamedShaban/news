@@ -29,4 +29,14 @@ class ApiManager {
     return articlesResponse;
   }
 
+  static Future<ArticlesResponse> getSearchArticles(String searchText) async {
+    var response  =await dio.get("/v2/everything",queryParameters: {
+     "apiKey": "9f4ad1b8e7fc4c0fad595e528c044512",
+     "q": searchText,
+   });
+    ArticlesResponse articlesResponse = ArticlesResponse.fromJson(response.data);
+    return articlesResponse;
+ }
+
+
 }

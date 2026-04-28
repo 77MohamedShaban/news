@@ -11,5 +11,7 @@ abstract final class AssetsManager {
   static const String home = "assets/images/Home 1.svg";
   static const String themeIcon = "assets/images/roller-paint-brush.svg";
   static const String languageIcon = "assets/images/globe-alt.svg";
-
+  static const String searchingLottie = "assets/lottie/search imm.json";
+  static const String emptyLottie = "assets/lottie/empty ghost.json";
+  static const String noInternetLottie = "assets/lottie/No Internet Connection.json";
 }

@@ -44,6 +44,9 @@ dependencies:
   cached_network_image: ^3.4.1
   timeago: ^3.7.1
   dio: ^5.9.2
+  url_launcher: ^6.3.2
+  webview_flutter: ^4.13.1
+  lottie: ^3.3.3
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +74,7 @@ flutter:
   assets:
     - assets/images/
     - assets/translations/
+    - assets/lottie/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

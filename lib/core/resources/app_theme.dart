@@ -51,6 +51,11 @@ class AppTheme {
         fontWeight: FontWeight.w500,
         color: ColorsManager.lightSecondaryColor,
       ),
+      labelSmall: TextStyle(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.lightPrimaryColor,
+      ),
     ),
   );
   static ThemeData darkTheme = ThemeData(
@@ -69,7 +74,7 @@ class AppTheme {
     drawerTheme: DrawerThemeData(
       backgroundColor: ColorsManager.darkPrimaryColor,
     ),
-    colorScheme: ColorScheme.light(
+    colorScheme: ColorScheme.dark(
       primary: ColorsManager.darkSecondaryColor,
       secondary: ColorsManager.darkPrimaryColor,
       onSecondary: ColorsManager.greyColor,
@@ -99,6 +104,11 @@ class AppTheme {
         fontSize: 24.sp,
         fontWeight: FontWeight.w500,
         color: ColorsManager.darkSecondaryColor,
+      ),
+      labelSmall: TextStyle(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.darkPrimaryColor,
       ),
     ),
   );

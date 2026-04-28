@@ -1,3 +1,4 @@
+import 'package:News/ui/search/screen/search_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
           initialRoute: RoutesManager.homeRouteName,
           routes: {
             RoutesManager.homeRouteName: (_) => HomeScreen(),
+            RoutesManager.searchRouteName: (_) => SearchScreen(),
           },
         );
       },
