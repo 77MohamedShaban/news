@@ -2,6 +2,20 @@
 
 A modern, responsive, and multi-lingual News Application built with Flutter. This app provides real-time news updates across various categories, featuring a sleek UI with support for both Light and Dark modes.
 
+## 📸 Screenshots [ dark mode ]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/794aa6d7-3f0b-420f-9880-185daf27ffef" height="350"/>
+  <img src="https://github.com/user-attachments/assets/9d8a44c8-ad32-4e3c-98b9-399fb5a0ada2" height="350"/>
+  <img src="https://github.com/user-attachments/assets/ec55a80b-ba43-4364-912e-21584eca1372" height="350"/>
+  <img src="https://github.com/user-attachments/assets/1277a373-9221-4b50-96e3-05a5621503bf" height="350"/>
+   <img src="https://github.com/user-attachments/assets/d63facf6-79de-4af4-bdb6-0887252b6c80" height="350"/>
+  <img src="https://github.com/user-attachments/assets/1e39dca0-6e38-49ac-bc0d-817d17e6b53a" height="350"/>
+  <img src="https://github.com/user-attachments/assets/b70a7cdf-82b4-49d8-ba74-a6e9c0e14a79" height="350"/>
+  <img src="https://github.com/user-attachments/assets/67486be9-2321-40f6-aeb2-ed16e2487710" height="350"/>
+  <img src="https://github.com/user-attachments/assets/233072b3-8592-44d0-a400-cde358676ff6" height="350"/>
+</p>
+
+---
 ## 🚀 Features
 
 - **Multi-Category News**: Browse news from different sectors like Sports, Technology, Business, Health, Science, and Entertainment.
@@ -64,10 +78,4 @@ lib/
    ```bash
    flutter run
    ```
-
-## 📸 Screenshots [ dark mode ]
-
-*(Add your screenshots here later)*
-
----
 Developed with Mohamed Shaban.
