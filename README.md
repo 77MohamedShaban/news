@@ -15,6 +15,10 @@ A modern, responsive, and multi-lingual News Application built with Flutter. Thi
   <img src="https://github.com/user-attachments/assets/233072b3-8592-44d0-a400-cde358676ff6" height="350"/>
 </p>
 
+## 🎬 Demo
+
+👉 Watch Demo Video: https://www.linkedin.com/posts/mohamed-shaban-480019398_flutter-mobiledevelopment-opentowork-ugcPost-7455005904669720576-Kyet?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGGI0GABNB-j_SY7kBI5UbRrqZX0uGYNWw8
+
 ## 🏗️ Architecture
 ​
  - **MVVM (Model-View-ViewModel)**: The project follows the MVVM architectural pattern to ensure a clean separation of concerns, making the code more maintainable, testable, and scalable.
