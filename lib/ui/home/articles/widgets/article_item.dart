@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 import '../../../../core/resources/UiUtils.dart';
-import '../../../../model/articles_response/Article.dart';
+import '../../../../data/model/articles_response/Article.dart';
 
 class ArticleItem extends StatelessWidget {
   final Article article;

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import '../../../core/remote/network/api_manager.dart';
 import '../../../core/resources/strings_Manager.dart';
-import '../../../model/articles_response/Article.dart';
+import '../../../data/model/articles_response/Article.dart';
 
 class SearchViewModel extends ChangeNotifier {
   List<Article>? articles;

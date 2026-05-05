@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
-import '../../model/articles_response/Article.dart';
+import '../../data/model/articles_response/Article.dart';
 
 abstract final class UIUtils {
   static void showArticleDialog(BuildContext context, Article article) {

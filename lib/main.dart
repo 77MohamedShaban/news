@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:News/providers/theme_provider.dart';
 import 'package:News/ui/home/screen/home_screen.dart';
 import 'package:provider/provider.dart';
+import 'core/di/di.dart';
 import 'core/remote/local/prefs_manager.dart';
 import 'core/resources/app_theme.dart';
 import 'core/resources/routes_manager.dart';
@@ -14,6 +15,7 @@ void main() async{
   await ScreenUtil.ensureScreenSize();
   await EasyLocalization.ensureInitialized();
   await PrefsManager.init();
+  configureDependencies();
   runApp(EasyLocalization(
       startLocale: Locale("en"),
       supportedLocales: [Locale('en'), Locale('ar')],

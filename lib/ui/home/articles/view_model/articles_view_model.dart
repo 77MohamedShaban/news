@@ -1,33 +1,46 @@
-import 'package:flutter/material.dart';
-import '../../../../core/remote/network/api_manager.dart';
-import '../../../../core/resources/strings_Manager.dart';
-import '../../../../model/articles_response/Article.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
+import '../../../../articles_repo.dart';
+import '../../../../data/model/articles_response/Article.dart';
 
-class ArticlesViewModel extends ChangeNotifier {
-  List<Article>? articles;
-  bool isLoading = false;
-  String? errorMessage;
-  String? responseMessage;
+@injectable
+class ArticlesViewModel extends Cubit<ArticlesState> {
+late ArticlesRepo articlesRepo;
+  ArticlesViewModel(this.articlesRepo) : super(LoadingState());
 
-  getArticles(String sourceId) async {
+  Future<void> getArticles(String sourceId) async {
     try {
-      errorMessage = null;
-      responseMessage = null;
-      articles = null;
-      isLoading = true;
-      notifyListeners();
-      var response = await ApiManager.getArticles(sourceId);
-      isLoading = false;
-      if (response.status != "error") {
-        articles = response.articles;
+      emit(LoadingState());
+      var response = await articlesRepo.getArticles(sourceId);
+      if (response.message != "error") {
+        emit(SuccessState(response.articles ?? []));
       } else {
-        responseMessage = response.message;
+        emit(ResponseErrorState(response.message!));
       }
-      notifyListeners();
     } catch (e) {
-      isLoading = false;
-      errorMessage = StringsManager.noInternetConnection;
-      notifyListeners();
+      emit(ErrorState(e.toString()));
     }
   }
+}
+
+sealed class ArticlesState {}
+
+class LoadingState extends ArticlesState {}
+
+class ErrorState extends ArticlesState {
+  String errorMassage;
+
+  ErrorState(this.errorMassage);
+}
+
+class ResponseErrorState extends ArticlesState {
+  String responseErrorMassage;
+
+  ResponseErrorState(this.responseErrorMassage);
+}
+
+class SuccessState extends ArticlesState {
+  List<Article> articles;
+
+  SuccessState(this.articles);
 }
