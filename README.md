@@ -60,7 +60,7 @@ lib/
 ├── core/
 │   ├── remote/           # API and Local Storage logic
 │   └── resources/        # Themes, Assets, Strings, and Constants
-├── model/                # Data models for Articles and Sources
+├── data/model/                # Data models for Articles and Sources
 ├── providers/            # State providers (e.g., ThemeProvider)
 ├── ui/                   # UI Screens and Widgets
 │   ├── home/             # Main dashboard, Categories, and Articles list

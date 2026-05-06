@@ -1,33 +1,48 @@
-import 'package:News/core/resources/strings_Manager.dart';
-import 'package:flutter/material.dart';
+import 'package:News/data/model/sources_response/Source.dart';
+import 'package:News/sources_repo.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
+
 import '../../../../core/remote/network/api_manager.dart';
-import '../../../../model/sources_response/Source.dart';
 
-class SourcesViewModel extends ChangeNotifier {
-  List<Source>? sources;
-  bool isLoading = false;
-  String? errorMessage;
-  String? responseMessage;
+@injectable
+class SourcesViewModel extends Cubit<SourcesState> {
+  SourcesRepo sourcesRepo;
+  SourcesViewModel(this.sourcesRepo) : super(LoadingState());
 
-  getSources(String selectedCategory) async {
+  getSources(String category) async {
     try {
-      errorMessage=null;
-      responseMessage=null;
-      sources = null;
-      isLoading = true;
-      notifyListeners();
-      var response = await ApiManager.getSources(selectedCategory);
-      isLoading = false;
+      emit(LoadingState());
+      var response = await sourcesRepo.getSources(category);
       if (response.status != "error") {
-        sources = response.sources;
+        emit(SuccessState(response.sources??[]));
       } else {
-        responseMessage = response.message;
+        emit(ErrorResponseState(response.message!));
       }
-      notifyListeners();
     } catch (e) {
-      isLoading = false;
-      errorMessage = StringsManager.noInternetConnection;
-      notifyListeners();
+      emit(ErrorState(e.toString()));
     }
   }
+}
+
+sealed class SourcesState {}
+
+class LoadingState extends SourcesState {}
+
+class ErrorState extends SourcesState {
+  String errorMassage;
+
+  ErrorState(this.errorMassage);
+}
+
+class ErrorResponseState extends SourcesState {
+  String errorResponseMassage;
+
+  ErrorResponseState(this.errorResponseMassage);
+}
+
+class SuccessState extends SourcesState {
+  List<Source> sources;
+
+  SuccessState(this.sources);
 }

@@ -1,4 +1,4 @@
-import '../../model/category_model.dart';
+import '../../data/model/category_model.dart';
 import 'strings_Manager.dart';
 
 abstract class AppConstants {
